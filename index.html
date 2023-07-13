@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compartilhe suas Receitas</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Compartilhe suas Receitas</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Adicione sua Receita</h2>
+      <form id="receita-form">
+        <label for="nome-receita">Nome da Receita:</label>
+        <input type="text" id="nome-receita" name="nome-receita" required>
+
+        <label for="ingredientes">Ingredientes:</label>
+        <textarea id="ingredientes" name="ingredientes" required></textarea>
+
+        <label for="modo-preparo">Modo de Preparo:</label>
+        <textarea id="modo-preparo" name="modo-preparo" required></textarea>
+
+        <button type="submit">Enviar Receita</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Receitas Compartilhadas</h2>
+      <div id="receitas">
+        <!-- As receitas compartilhadas serão adicionadas dinamicamente aqui -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Compartilhe suas Receitas. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+
